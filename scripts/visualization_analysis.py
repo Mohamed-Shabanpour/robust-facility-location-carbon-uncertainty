@@ -30,7 +30,7 @@ x_sol_stoch = sol["x_sol_stoch"]
 # ============================================================
 # Prepare directories
 # ============================================================
-output_dir = "project_results"
+output_dir = "figures"
 os.makedirs(output_dir, exist_ok=True)
 
 # ============================================================
