@@ -12,5 +12,3 @@ A scenario-based optimisation framework is developed and analysed using three pa
 - Illustrates the impact of carbon pricing on network structure and assignment decisions.
 - Provides a reproducible modelling framework for sustainability-aware supply chain design.
 
-### Research Positioning
-The project is positioned within the Operations Research and Supply Chain Management literature and serves as a methodological foundation for doctoral research on robust and sustainable network design under uncertainty.
