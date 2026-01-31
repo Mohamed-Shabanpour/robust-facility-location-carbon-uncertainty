@@ -62,4 +62,6 @@ for s in range(n_scen):
         'prob': scenario_probs[s]
     }
 
-print(f"Generated {len(scenarios)} scenarios with {n_fac} facilities and {n_cust} customers.")
+if __name__ == "__main__":
+    print(f"Generated {len(scenarios)} scenarios with {n_fac} facilities and {n_cust} customers.")
+
