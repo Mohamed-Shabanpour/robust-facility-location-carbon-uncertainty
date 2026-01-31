@@ -31,11 +31,4 @@ In the worst-case scenario, the robust solution shows a more balanced cost struc
 
 ---
 
-## Implications for PhD Research
-The results demonstrate the practical relevance of min–max regret optimisation for sustainable supply chain network design. The modelling framework provides a solid foundation for future doctoral research on:
-- Data-driven uncertainty sets
-- Endogenous scenario generation
-- Integration of forecasting and robust optimisation
-- Policy-driven sustainability constraints
-
 Overall, the findings support the use of robust optimisation as a viable decision-making paradigm in uncertain and regulation-intensive supply chain environments.
