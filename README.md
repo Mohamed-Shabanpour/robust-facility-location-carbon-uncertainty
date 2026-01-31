@@ -1,6 +1,5 @@
 # robust-facility-location-carbon-uncertainty
 Robust and stochastic facility location under demand uncertainty and carbon pricing using min–max regret optimisation
-# Forecast-Driven Robust Facility Location and Flow Design under Demand Uncertainty and Carbon Pricing
 
 ## Overview
 This project investigates a strategic supply chain network design problem under demand uncertainty, transportation cost variability, carbon pricing, and facility disruption risk. The objective is to determine facility location and customer–facility flow decisions that remain effective across multiple adverse scenarios.
