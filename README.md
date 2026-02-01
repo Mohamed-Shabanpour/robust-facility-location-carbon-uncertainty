@@ -48,12 +48,12 @@ All models are implemented in **Pyomo** and solved using open-source MILP solver
 
 ---
 
-## Key Features
-- Scenario-based uncertainty modelling
-- Explicit integration of carbon costs into transportation decisions
-- Facility disruption and failure scenarios
-- Comparative analysis of robust and stochastic decision paradigms
-- Network, cost, and regret visualisation for operational interpretation
+## Key Insights
+- Robust min–max regret solutions prioritise stability relative to scenario-optimal benchmarks rather than minimising expected cost.
+- Stochastic solutions can achieve lower expected costs but exhibit higher exposure to worst-case regret.
+- Carbon pricing materially alters customer–facility assignments and regret profiles.
+- The efficiency–robustness trade-off shows that modest efficiency losses can yield substantial reductions in downside risk.
+
 
 ---
 
