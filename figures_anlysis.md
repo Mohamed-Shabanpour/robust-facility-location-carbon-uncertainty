@@ -20,7 +20,7 @@ From an operations perspective, this illustrates a key property of min–max reg
 
 The stochastic expected-cost solution opens three facilities, resulting in a more spatially distributed network than the robust solution. Facility selection and customer assignments prioritise minimisation of expected costs under the assumed scenario probabilities.
 
-This configuration performs well on average and coincides with scenario-optimal solutions in some cases. However, the network structure remains sensitive to adverse scenarios that deviate from expected conditions, particularly those involving demand surges, elevated carbon prices, or facility disruptions.
+This configuration performs well on average and coincides with scenario-optimal solutions in some cases. However, the network structure remains sensitive to adverse scenarios that deviate from expected conditions, particularly those involving demand surges or facility disruptions.
 
 Operationally, the stochastic solution reflects efficiency-driven planning with limited protection against low-probability, high-impact events.
 
