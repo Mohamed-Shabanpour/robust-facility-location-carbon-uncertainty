@@ -192,3 +192,48 @@ axs[1].set_title("Stochastic Expected-Cost - Worst Scenario")
 plt.tight_layout()
 plt.savefig(os.path.join(output_dir, "cost_breakdown_worst_comparison.png"), dpi=300)
 plt.show()
+
+# ============================================================
+# Trade-off plot: Expected Cost vs Worst-Case Regret
+# ============================================================
+
+# Compute expected cost for each solution
+expected_cost_mm = sum(
+    scenarios[s]['prob'] * costs_mm[s]
+    for s in scenarios
+)
+
+expected_cost_stoch = sum(
+    scenarios[s]['prob'] * costs_stoch[s]
+    for s in scenarios
+)
+
+# Worst-case regret
+worst_regret_mm = max(regrets[s] for s in scenarios)
+worst_regret_stoch = max(regrets_stoch[s] for s in scenarios)
+
+plt.figure(figsize=(7, 6))
+
+plt.scatter(expected_cost_mm, worst_regret_mm, s=120, marker='o', label='Robust Min–Max Regret')
+plt.scatter(expected_cost_stoch, worst_regret_stoch, s=120, marker='^', label='Stochastic Expected-Cost')
+
+# Annotate points
+plt.annotate("Robust",
+             (expected_cost_mm, worst_regret_mm),
+             textcoords="offset points",
+             xytext=(8, -10))
+
+plt.annotate("Stochastic",
+             (expected_cost_stoch, worst_regret_stoch),
+             textcoords="offset points",
+             xytext=(8, -10))
+
+plt.xlabel("Expected Total Cost")
+plt.ylabel("Worst-Case Regret")
+plt.title("Efficiency–Robustness Trade-off")
+plt.legend()
+plt.grid(True, linestyle='--', alpha=0.5)
+
+plt.tight_layout()
+plt.savefig(os.path.join(output_dir, "expected_cost_vs_worst_regret.png"), dpi=300)
+plt.show()
